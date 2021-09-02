@@ -1,3 +1,5 @@
+#!/bin/sh
+
 cd
 apt install -y screen < "/dev/null"
 mkdir yoho

